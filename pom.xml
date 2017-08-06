@@ -24,7 +24,20 @@
                       </properties>
          </profile>
          </profiles>
-         <distributionManagement>    <!-- use the following if you're not using a snapshot version. -->    <repository>        <id>nexus</id>        <name>RepositoryProxyRel</name>        <url>http://localhost:8081/repository/maven-releases//</url>    </repository>    <!-- use the following if you ARE using a snapshot version. -->    <snapshotRepository>        <id>nexus</id>        <name>RepositoryProxySnap</name>        <url>http://localhost:8081/repository/maven-snapshots/</url>    </snapshotRepository></distributionManagement>
+         <distributionManagement>
+           <!-- use the following if you're not using a snapshot version. --> 
+           <repository>
+            <id>nexus</id>
+             <name>RepositoryProxyRel</name> 
+              <url>http://localhost:8081/repository/maven-releases//</url>
+              </repository>   
+              <!-- use the following if you ARE using a snapshot version. --> 
+               <snapshotRepository> 
+                <id>nexus</id> 
+                <name>RepositoryProxySnap</name> 
+                 <url>http://localhost:8081/repository/maven-snapshots/</url> 
+                </snapshotRepository>    
+         </distributionManagement>
 
 
   <modules>
